@@ -1,0 +1,141 @@
+
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ------------------------------
+# Virtual environment
+# ------------------------------
+.env
+.venv
+venv/
+env/
+ENV/
+*.env
+
+# ------------------------------
+# Jupyter Notebooks
+# ------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------
+# Logs and temp files
+# ------------------------------
+logs/
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+
+# ------------------------------
+# Data / Cache / Models
+# ------------------------------
+data/
+datasets/
+cache/
+.output/
+outputs/
+checkpoints/
+figures/
+Tutorial 5 BERT ipynb/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.npy
+*.npz
+*.pkl
+*.onnx
+*.ipynb
+
+# HuggingFace / Torch caches
+~/.cache/
+~/.torch/
+~/.huggingface/
+
+# ------------------------------
+# Project notebooks and experiments
+# ------------------------------
+runs/
+experiments/
+wandb/
+readme/
+
+# ------------------------------
+# VSCode / IDE settings
+# ------------------------------
+.vscode/
+.idea/
+
+# ------------------------------
+# Misc
+# ------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Ignore specific file types you mentioned
+*.sh
+*.png
+*.pdf
+*.csv
+*.docx
+*.sav
+*.txt
+*.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
