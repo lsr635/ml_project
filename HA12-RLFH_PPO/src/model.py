@@ -169,7 +169,7 @@ class SFLM(nn.Module):
         self.head:nn.Linear = nn.Linear(self.emb_dim, self.vocab_size)
         r"""The linear layer project embeddings into logits for predicting the next token at each position."""
 
-    def forward(self, idx: LongTensor) -> FloatTensor:
+    def forward(self, idx: LongTensor, return_hidden: bool = False):
         r"""Compute logits of the next token.
 
         Denote input as :math:`S`, and output as :math:`Z`,
@@ -234,6 +234,8 @@ class SFLM(nn.Module):
         logit = self.head(x) #(N, L, V)
 
         ######################################### END OF YOUR CODE ################################
+        if return_hidden:
+            return logit, x
         return logit
 
     @torch.no_grad()
@@ -274,4 +276,3 @@ class SFLM(nn.Module):
                 next_token_id = torch.argmax(next_token_logit, dim=-1, keepdim=True)
             idx = torch.cat([idx, next_token_id], -1)
         return idx
-
